@@ -16,7 +16,9 @@ export default function Home() {
   const callWSBApi = async () => {
     let today = new Date().toLocaleDateString();
     try {
-      const response = await fetch(`https://stonkz-data-api-production.up.railway.app/wsbData?date=` + today);
+      const response = await fetch(`https://stonkz-data-api-production.up.railway.app/wsbData?date=` + today, {
+        headers: { 'Access-Control-Allow-Origin': '*' },
+      });
       const responseData: WsbResponse[] = await response.json();
       setWsbData(responseData);
 
