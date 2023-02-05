@@ -16,7 +16,7 @@ export default function Home() {
   const callWSBApi = async () => {
     let today = new Date().toLocaleDateString();
     try {
-      const response = await fetch(`http://localhost:8080/wsbData?date=` + today);
+      const response = await fetch(`https://tradestie.com/api/v1/apps/reddit?date=` + today);
       const responseData: WsbResponse[] = await response.json();
       setWsbData(responseData);
 
