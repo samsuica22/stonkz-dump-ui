@@ -1,5 +1,12 @@
 .tickerTable {
-    margin-top: 100px;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-top: 50px;
+
+}
+
+@media (min-width: 450px) {
+    .tickerTable {
+        margin-top: 100px;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
 }
