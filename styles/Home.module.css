@@ -1,3 +1,8 @@
+.displayText {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .tickerTable {
     margin-top: 50px;
 
